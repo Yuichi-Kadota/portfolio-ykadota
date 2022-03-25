@@ -10,7 +10,6 @@ const Home: NextPage = () => {
       <Drawer ></Drawer>
       <Main></Main>
     </Box>
-    {/* <ResponsiveDrawer></ResponsiveDrawer> */}
     </>
   )
 }
