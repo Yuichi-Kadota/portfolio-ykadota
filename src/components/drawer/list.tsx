@@ -1,5 +1,5 @@
 
-import {List as MuiList} from '@mui/material';
+import {List as MuiList, Typography, Box} from '@mui/material';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
@@ -11,9 +11,19 @@ export default function List(){
     
     return(
     <div>
-      <Toolbar >
-        <p>hogehoge</p>
-      </Toolbar>
+      <Box sx={{m:1,ml:2}}>
+        {/* <Box sx={{ typography: 'h4' }}>Yuichi Kadota</Box> */}
+        <Typography variant={"h4"} sx={{
+            color: (theme) => theme.palette.primary.main,
+            fontFamily:"メイリオ", 
+        }}>Yuichi Kadota</Typography>
+      </Box>
+      <Box sx={{m:1,ml:2}}>
+        <Typography variant={"subtitle2"} sx={{
+            color: (theme) => theme.palette.secondary.main,
+            fontFamily:"メイリオ",
+        }}>Web Developer</Typography>
+      </Box>
       <Divider />
       <MuiList>
         {/* TODO コンテンツ編集/onClickのスクロール実装 */}
