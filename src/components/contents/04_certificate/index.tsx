@@ -1,6 +1,6 @@
 import AppBar from '../common/appbar';
 import Grid from '@mui/material/Grid';
-import { Card, CardContent, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 
 export default function Certificate() {
   return (
@@ -9,6 +9,7 @@ export default function Certificate() {
         <AppBar title={'Certificate'}></AppBar>
       </Grid>
       <Grid container direction="column">
+        {/*TODO ListItemにリファクタする */}
         <Typography
           variant="h5"
           sx={{
