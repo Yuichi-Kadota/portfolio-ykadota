@@ -1,15 +1,15 @@
 import type { NextPage } from 'next'
-import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Drawer from '../components/drawer'
-import Main from '../components/main'
+import Contents from '../components/contents'
 
 const Home: NextPage = () => {
   return (
     <>
-    <Box sx={{ display: 'flex' }}>
+    <Grid container>
       <Drawer ></Drawer>
-      <Main></Main>
-    </Box>
+      <Contents></Contents>
+    </Grid>
     </>
   )
 }
