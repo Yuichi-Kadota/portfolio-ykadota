@@ -11,7 +11,7 @@ export default function About(){
 	  			<AppBar title={"About"}></AppBar>
         </Grid>
         <Grid item xs={3} sx={{ml:5,mt:3,mb:2}}>
-          <Image src="/contents/profile.png" width={300} height={300}></Image>
+          <Image src="/contents/about/profile.png" width={300} height={300}></Image>
         </Grid>
         <Grid item xs={5}>
           {/* TODO 載せる内容、文章を考える */}
