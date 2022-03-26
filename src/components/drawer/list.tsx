@@ -3,16 +3,14 @@ import {List as MuiList, Typography, Box} from '@mui/material';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import Toolbar from '@mui/material/Toolbar';
 import Divider from '@mui/material/Divider';
 import Image from 'next/image'
 
 export default function List(){
     
     return(
-    <div>
+    <Box sx={{maxWidth:(theme)=>theme.spacing(21)}}>
       <Box sx={{m:1,ml:2}}>
-        {/* <Box sx={{ typography: 'h4' }}>Yuichi Kadota</Box> */}
         <Typography variant={"h4"} sx={{
             color: (theme) => theme.palette.primary.main,
             fontFamily:"メイリオ", 
@@ -58,6 +56,6 @@ export default function List(){
             <ListItemText primary={"contact"} />
           </ListItem>
       </MuiList>
-    </div>
+    </Box>
     )
 }
