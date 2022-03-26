@@ -5,12 +5,10 @@ import Contents from '../components/contents'
 
 const Home: NextPage = () => {
   return (
-    <>
     <Grid container>
       <Drawer ></Drawer>
       <Contents></Contents>
     </Grid>
-    </>
   )
 }
 
