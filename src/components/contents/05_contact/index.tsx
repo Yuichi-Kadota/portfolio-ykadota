@@ -6,7 +6,11 @@ import { css } from '@emotion/react';
 
 export default function Contact() {
   return (
-    <Grid container columns={12}>
+    <Grid
+      container
+      columns={12}
+      sx={{ background: (theme) => theme.palette.grey[50] }}
+    >
       <Grid item xs={12}>
         <AppBar title={'Contact'}></AppBar>
       </Grid>

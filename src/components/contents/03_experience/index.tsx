@@ -4,7 +4,11 @@ import Project from './project';
 
 export default function Experience() {
   return (
-    <Grid container columns={12}>
+    <Grid
+      container
+      columns={12}
+      sx={{ background: (theme) => theme.palette.grey[50] }}
+    >
       <Grid item xs={12}>
         <AppBar title={'Experience'}></AppBar>
       </Grid>

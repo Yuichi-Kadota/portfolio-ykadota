@@ -5,11 +5,23 @@ import { Typography } from '@mui/material';
 
 export default function About() {
   return (
-    <Grid container columns={12}>
+    <Grid
+      container
+      columns={12}
+      sx={{ background: (theme) => theme.palette.grey[50] }}
+    >
       <Grid item xs={12}>
         <AppBar title={'About'}></AppBar>
       </Grid>
-      <Grid item xs={3} sx={{ ml: 5, mt: 3, mb: 2 }}>
+      <Grid
+        item
+        xs={3}
+        sx={{
+          ml: 5,
+          mt: 3,
+          mb: 2,
+        }}
+      >
         <Image
           src="/contents/about/profile.png"
           width={300}

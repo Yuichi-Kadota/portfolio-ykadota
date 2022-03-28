@@ -4,7 +4,11 @@ import { Typography } from '@mui/material';
 
 export default function Certificate() {
   return (
-    <Grid container columns={12}>
+    <Grid
+      container
+      columns={12}
+      sx={{ background: (theme) => theme.palette.grey[50] }}
+    >
       <Grid item xs={12}>
         <AppBar title={'Certificate'}></AppBar>
       </Grid>

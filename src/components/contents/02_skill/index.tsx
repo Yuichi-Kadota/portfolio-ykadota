@@ -4,7 +4,11 @@ import Item from './item';
 
 export default function Skill() {
   return (
-    <Grid container columns={12}>
+    <Grid
+      container
+      columns={12}
+      sx={{ background: (theme) => theme.palette.grey[50] }}
+    >
       <Grid item xs={12}>
         <AppBar title={'Skill'}></AppBar>
       </Grid>
