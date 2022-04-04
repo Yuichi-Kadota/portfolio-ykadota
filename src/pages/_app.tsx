@@ -6,6 +6,7 @@ import { CacheProvider, EmotionCache, Global } from '@emotion/react';
 import theme from '../theme';
 import createEmotionCache from '../createEmotionCache';
 import { GlobalStyle } from '../styles/global';
+import { SiteRefProvider } from '../contexts/context';
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -21,7 +22,9 @@ function MyApp(props: MyAppProps) {
       <ThemeProvider theme={theme}>
         <Global styles={GlobalStyle} />
         <CssBaseline />
-        <Component {...pageProps} />
+        <SiteRefProvider>
+          <Component {...pageProps} />
+        </SiteRefProvider>
       </ThemeProvider>
     </CacheProvider>
   );
