@@ -1,8 +1,10 @@
-import AppBar from '../common/appbar';
+import { AppBar } from '../common/appbar';
 import { Grid } from '@mui/material';
 import Project from './project';
+import { useSiteRef } from '../../../contexts/usecontext';
 
 export default function Experience() {
+  const siteRef = useSiteRef();
   return (
     <Grid
       container
@@ -10,7 +12,10 @@ export default function Experience() {
       sx={{ background: (theme) => theme.palette.grey[50] }}
     >
       <Grid item xs={12}>
-        <AppBar title={'Experience'}></AppBar>
+        <AppBar
+          title={'Experience'}
+          ref={siteRef.ContextRefs.experienceRef}
+        ></AppBar>
       </Grid>
       <Grid container direction="row" justifyContent="center">
         <Project
