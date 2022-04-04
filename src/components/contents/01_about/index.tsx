@@ -1,9 +1,11 @@
-import AppBar from '../common/appbar';
+import { AppBar } from '../common/appbar';
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
 import { Typography } from '@mui/material';
+import { useSiteRef } from '../../../contexts/usecontext';
 
 export default function About() {
+  const siteRef = useSiteRef();
   return (
     <Grid
       container
@@ -11,7 +13,7 @@ export default function About() {
       sx={{ background: (theme) => theme.palette.grey[50] }}
     >
       <Grid item xs={12}>
-        <AppBar title={'About'}></AppBar>
+        <AppBar title={'About'} ref={siteRef.ContextRefs.aboutRef}></AppBar>
       </Grid>
       <Grid
         item
