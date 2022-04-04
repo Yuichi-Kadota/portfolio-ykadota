@@ -1,41 +1,27 @@
 import React, { createRef } from 'react';
 
-const aboutRef = createRef();
-const skillRef = createRef();
-const experienceRef = createRef();
-const certificateRef = createRef();
-const contactRef = createRef();
-
-export interface refs {
-  aboutRef: React.RefObject<unknown>;
-  skillRef: React.RefObject<unknown>;
-  experienceRef: React.RefObject<unknown>;
-  certificateRef: React.RefObject<unknown>;
-  contactRef: React.RefObject<unknown>;
+export interface ContextRefs {
+  aboutRef: React.RefObject<HTMLDivElement>;
+  skillRef: React.RefObject<HTMLDivElement>;
+  experienceRef: React.RefObject<HTMLDivElement>;
+  certificateRef: React.RefObject<HTMLDivElement>;
+  contactRef: React.RefObject<HTMLDivElement>;
 }
-
-const defaultRef: refs = {
-  aboutRef: aboutRef,
-  skillRef: skillRef,
-  experienceRef: experienceRef,
-  certificateRef: certificateRef,
-  contactRef: contactRef,
-};
 
 export interface SiteRefContextProps {
-  refs?: refs;
+  ContextRefs: ContextRefs;
 }
 
-export const SiteRefContext = React.createContext<SiteRefContextProps>({
-  refs: defaultRef,
-});
+export const SiteRefContext = React.createContext<
+  SiteRefContextProps | undefined
+>(undefined);
 
 export const SiteRefProvider: React.FC<SiteRefContextProps> = ({
   children,
-  refs,
+  ContextRefs,
 }) => {
   return (
-    <SiteRefContext.Provider value={{ refs }}>
+    <SiteRefContext.Provider value={{ ContextRefs }}>
       {children}
     </SiteRefContext.Provider>
   );
