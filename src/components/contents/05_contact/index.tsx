@@ -1,10 +1,12 @@
-import AppBar from '../common/appbar';
+import { AppBar } from '../common/appbar';
 import Grid from '@mui/material/Grid';
 import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import Image from 'next/image';
 import { css } from '@emotion/react';
+import { useSiteRef } from '../../../contexts/usecontext';
 
 export default function Contact() {
+  const siteRef = useSiteRef();
   return (
     <Grid
       container
@@ -12,7 +14,7 @@ export default function Contact() {
       sx={{ background: (theme) => theme.palette.grey[50] }}
     >
       <Grid item xs={12}>
-        <AppBar title={'Contact'}></AppBar>
+        <AppBar title={'Contact'} ref={siteRef.ContextRefs.contactRef}></AppBar>
       </Grid>
       <Grid container direction="column">
         <List sx={{ mb: 15 }}>
