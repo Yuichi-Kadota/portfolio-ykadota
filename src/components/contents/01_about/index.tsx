@@ -2,7 +2,7 @@ import { AppBar } from '../common/appbar';
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
 import { Typography } from '@mui/material';
-import { useSiteRef } from '../../../contexts/usecontext';
+import { useSiteRef } from '../../../contexts/useSiteRef';
 
 export default function About() {
   const siteRef = useSiteRef();

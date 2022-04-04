@@ -1,7 +1,7 @@
 import { AppBar } from '../common/appbar';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
-import { useSiteRef } from '../../../contexts/usecontext';
+import { useSiteRef } from '../../../contexts/useSiteRef';
 
 export default function Certificate() {
   const siteRef = useSiteRef();

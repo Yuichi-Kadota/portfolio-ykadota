@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import Image from 'next/image';
 import { css } from '@emotion/react';
-import { useSiteRef } from '../../../contexts/usecontext';
+import { useSiteRef } from '../../../contexts/useSiteRef';
 
 export default function Contact() {
   const siteRef = useSiteRef();
