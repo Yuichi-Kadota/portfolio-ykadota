@@ -1,8 +1,10 @@
-import AppBar from '../common/appbar';
+import { AppBar } from '../common/appbar';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
+import { useSiteRef } from '../../../contexts/usecontext';
 
 export default function Certificate() {
+  const siteRef = useSiteRef();
   return (
     <Grid
       container
@@ -10,7 +12,10 @@ export default function Certificate() {
       sx={{ background: (theme) => theme.palette.grey[50] }}
     >
       <Grid item xs={12}>
-        <AppBar title={'Certificate'}></AppBar>
+        <AppBar
+          title={'Certificate'}
+          ref={siteRef.ContextRefs.certificateRef}
+        ></AppBar>
       </Grid>
       <Grid container direction="column">
         {/*TODO ListItemにリファクタする */}

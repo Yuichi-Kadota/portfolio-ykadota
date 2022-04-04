@@ -1,8 +1,10 @@
-import AppBar from '../common/appbar';
+import { AppBar } from '../common/appbar';
 import { Grid, Card, CardContent, Typography } from '@mui/material';
 import Item from './item';
+import { useSiteRef } from '../../../contexts/usecontext';
 
 export default function Skill() {
+  const siteRef = useSiteRef();
   return (
     <Grid
       container
@@ -10,7 +12,7 @@ export default function Skill() {
       sx={{ background: (theme) => theme.palette.grey[50] }}
     >
       <Grid item xs={12}>
-        <AppBar title={'Skill'}></AppBar>
+        <AppBar title={'Skill'} ref={siteRef.ContextRefs.skillRef}></AppBar>
       </Grid>
       <Grid container direction="row" justifyContent="center">
         <Card sx={{ mt: 3, mb: 3, minWidth: (theme) => theme.spacing(120) }}>

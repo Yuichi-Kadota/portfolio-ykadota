@@ -1,10 +1,11 @@
+import React from 'react';
 import { AppBar as MuiAppBar, Typography } from '@mui/material';
 
 interface Props {
   title: string;
 }
 
-export default function AppBar(props: Props) {
+export const AppBar = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   return (
     <MuiAppBar
       position={'static'}
@@ -12,6 +13,7 @@ export default function AppBar(props: Props) {
         background: (theme) => theme.palette.primary.light,
       }}
     >
+      <div ref={ref}></div>
       <Typography
         align={'left'}
         variant={'h3'}
@@ -21,4 +23,4 @@ export default function AppBar(props: Props) {
       </Typography>
     </MuiAppBar>
   );
-}
+});
