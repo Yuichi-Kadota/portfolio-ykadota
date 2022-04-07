@@ -56,7 +56,7 @@ export default function Experience() {
         />
         <Project
           src={'/contents/experience/engineer.png'}
-          title={'社内横断PoC案件'}
+          title={'金融案件横断PoC案件'}
           position={'Full-Stack Software Developer'}
           doneList={[
             '社内プライベートクラウド運用/保守',

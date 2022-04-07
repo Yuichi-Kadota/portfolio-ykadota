@@ -56,9 +56,10 @@ export default function Project(props: Props) {
           {props.position}
         </Typography>
         <List sx={{ ml: 3, pb: 0 }}>
-          {props.doneList.map((v) => {
+          {props.doneList.map((v, i) => {
             return (
               <ListItemText
+                key={i}
                 primaryTypographyProps={{
                   variant: 'body1',
                 }}
@@ -69,9 +70,10 @@ export default function Project(props: Props) {
           })}
         </List>
         <Toolbar>
-          {props.techList.map((v) => {
+          {props.techList.map((v, i) => {
             return (
               <Chip
+                key={i}
                 label={v}
                 sx={{
                   color: 'white',
