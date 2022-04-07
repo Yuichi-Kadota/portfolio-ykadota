@@ -17,12 +17,11 @@ export default function Contact() {
         <AppBar title={'Contact'} ref={siteRef.ContextRefs.contactRef}></AppBar>
       </Grid>
       <Grid container direction="column">
-        <List sx={{ mb: 15 }}>
+        <List sx={{ mb: 15, ml: 10 }}>
           <ListItem
             disablePadding
             sx={{
               mt: 3,
-              ml: 10,
             }}
           >
             <ListItemIcon>
@@ -49,7 +48,6 @@ export default function Contact() {
             disablePadding
             sx={{
               mt: 3,
-              ml: 10,
             }}
           >
             <ListItemIcon>
@@ -76,7 +74,6 @@ export default function Contact() {
             disablePadding
             sx={{
               mt: 3,
-              ml: 10,
             }}
           >
             <ListItemIcon>
