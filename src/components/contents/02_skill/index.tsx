@@ -15,7 +15,7 @@ export default function Skill() {
         <AppBar title={'Skill'} ref={siteRef.ContextRefs.skillRef}></AppBar>
       </Grid>
       <Grid container direction="row" justifyContent="center">
-        <Card sx={{ mt: 3, mb: 3, minWidth: (theme) => theme.spacing(120) }}>
+        <Card sx={{ mt: 3, mb: 3 }}>
           <CardContent>
             <Typography
               variant="h5"
@@ -55,7 +55,7 @@ export default function Skill() {
         </Card>
       </Grid>
       <Grid container direction="row" justifyContent="center">
-        <Card sx={{ mt: 3, mb: 3, minWidth: (theme) => theme.spacing(120) }}>
+        <Card sx={{ mt: 3, mb: 3 }}>
           <CardContent>
             <Typography
               variant="h5"
@@ -92,7 +92,7 @@ export default function Skill() {
         </Card>
       </Grid>
       <Grid container direction="row" justifyContent="center">
-        <Card sx={{ mt: 3, mb: 3, minWidth: (theme) => theme.spacing(120) }}>
+        <Card sx={{ mt: 3, mb: 3 }}>
           <CardContent>
             <Typography
               variant="h5"

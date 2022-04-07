@@ -24,7 +24,7 @@ interface Props {
 
 export default function Project(props: Props) {
   return (
-    <Card sx={{ mt: 4, mb: 3, pb: 0, minWidth: (theme) => theme.spacing(90) }}>
+    <Card sx={{ mt: 4, mb: 3, pb: 0 }}>
       <CardContent
         // MuiCardContent-root-Projectのpadding-bottomを打ち消し
         css={css`

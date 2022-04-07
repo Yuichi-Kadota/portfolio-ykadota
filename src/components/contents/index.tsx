@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 
 export default function Contents() {
   return (
-    <Grid container sx={{ ml: (theme) => theme.spacing(21) }}>
+    <Grid container>
       <About></About>
       <Skill></Skill>
       <Experience></Experience>
